@@ -1,1 +1,1 @@
-# Implementação do Front-End a partir de um protótipo para a Chuva Inc.
+# Implementação do Front-End para a Chuva Inc.
