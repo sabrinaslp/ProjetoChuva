@@ -12,88 +12,225 @@
 body {
     font-size: 100%;
     background-color: white;
+    display: flex;
 }
 
 header {
     background-color: #FDF1EB;
+    width: 100%;
+    height: 68px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
 }
 
 /* Barra lateral */
 
 aside {
-background-color: #ffff;
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-position: absolute;
-margin-top: -131px;
-height: 100%;
-width: 220px
+    background-color: #ffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    height: 100%;
+    width: 220px
 }
 
 /* Menu sidebar */
 
 .menu-side li {
-padding: 7px 0px 7px 20px;
-border-bottom: 2px solid #E7E7E7;
+    padding: 7px 0px 7px 20px;
+    border-bottom: 2px solid #E7E7E7;
 }
 
 .menu-side ul {
-padding: 0px;
+    padding: 0px;
 }
 
-.menu-side a {   
-font-family: 'Quicksand';
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 19px; 
-color: #725C5C;
-text-decoration: none;
+.menu-side a {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #725C5C;
+    text-decoration: none;
 }
 
-#apresentacao, #comites, #autores, #eixos-tematicos, #contato {
-width: 220px;
-height: 33px;
+#apresentacao,
+#comites,
+#autores,
+#eixos-tematicos,
+#contato {
+    width: 220px;
+    height: 33px;
 }
 
-.menu-side li:active, #trabalho {
-background-color:#FDF1EB;
-border-left: 5px solid #ED7839;
-color: #725C5C;
+.menu-side li:active,
+#trabalho {
+    background-color: #FDF1EB;
+    border-left: 5px solid #ED7839;
+    color: #725C5C;
 }
 
 .menu-side li:hover {
-background-color: #FDF1EB;
+    background-color: #FDF1EB;
 }
 
 /* Logotipo da Sidebar */
 
 .titulo-side {
-color: #ffff;
-background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%); 
-height: 68px;
-display: flex;
-flex-direction: column;
-align-items: center;
+    color: #ffff;
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titulo-side h1 {
-position: absolute;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 35px;
-text-align: center;
-color: #FFFFFF;
-justify-content: center;
-padding-top: 15px;
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    justify-content: center;
+    padding-top: 15px;
 }
 
+/* Cabeçalho da página */
 
+.texto-inicial {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-left: 57px;
+    padding-top: 5px;
+    margin: 0;
+}
 
+.texto-inicial h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #725C5C;
+    margin: 0;
+}
 
+.texto-inicial p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #725C5C;
+    margin: 0;
+}
 
+.texto-inicial h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #725C5C;
+}
 
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 6px;
+    padding: 10px;
+    padding-right: 0px;
+    margin-right: 0px;
+}
 
+.dados-login {
+    position: absolute;
+    width: 72px;
+    height: 18px;
+    margin-left: -150px;
+    top: 17px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    color: #333333;
+}
 
+.dados-login p {
+    margin: 0;
+    text-align: right;
+    float: right;
+}
 
+.email {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+}
+
+.login-img img {
+    border-radius: 100%;
+    margin-bottom: 9px;
+    position: absolute;
+}
+
+.login-img {
+    margin-right: 30px;
+    margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.notificacao {
+    background: red;
+    color: white;
+    border-radius: 100%;
+    width: 10px;
+    height: 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    padding-left: 2px;
+    letter-spacing: -0.02em;
+    position: relative;
+    left: 23px;
+}
+
+.botao-seletor {
+    box-sizing: border-box;
+    position: absolute;
+    width: 97px;
+    height: 34px;
+    top: 17px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+
+#linguagem {
+    border: none;
+    background: #FDF1EB;
+    position: absolute;
+    padding: 5px 0px 5px 0px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
