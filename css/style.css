@@ -13,6 +13,7 @@ body {
     font-size: 100%;
     background-color: white;
     display: flex;
+    overflow-x: hidden;
 }
 
 header {
@@ -30,23 +31,30 @@ header {
 aside {
     background-color: #ffff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-    position: absolute;
+    position: fixed;
     height: 100%;
-    width: 220px
+    width: 220px;
 }
 
 /* Menu sidebar */
 
-.menu-side li {
+#menuSide li {
     padding: 7px 0px 7px 20px;
     border-bottom: 2px solid #E7E7E7;
 }
 
-.menu-side ul {
+#menuSide ul {
     padding: 0px;
+    width: 100%;
 }
 
-.menu-side a {
+#menuSide {
+    display: flex;
+    justify-content: left;
+    
+}
+
+#menuSide a {
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 500;
@@ -65,14 +73,14 @@ aside {
     height: 33px;
 }
 
-.menu-side li:active,
+#menuSide li:active,
 #trabalho {
     background-color: #FDF1EB;
     border-left: 5px solid #ED7839;
     color: #725C5C;
 }
 
-.menu-side li:hover {
+#menuSide li:hover {
     background-color: #FDF1EB;
 }
 
@@ -92,7 +100,7 @@ aside {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.875em;
     line-height: 35px;
     text-align: center;
     color: #FFFFFF;
@@ -529,3 +537,45 @@ aside {
     color: #ED7839;
     font-weight: 700;
 }
+
+/* Responsividade */
+
+#responsiveMenu {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #ffff;
+    position: absolute;
+    top: 13px;
+    padding-left: 10px;
+    display: none;
+}
+
+@media (max-width: 700px) {
+    #responsiveMenu {
+        display: block;
+    }
+
+    .titulo-side {
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+    }
+
+    #menuSide, #logoSide {
+        display: none;
+    }
+
+    aside {
+        background: transparent;
+    }
+}
+
+@media (max-width: 270px) {
+    .titulo-side h1 {
+        display: none;
+    }
+}
+
+
