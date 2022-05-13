@@ -271,7 +271,9 @@ aside {
 
 }
 
-#download-button, #favorite-button, #doi-button {
+#download-button,
+#favorite-button,
+#doi-button {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -286,7 +288,6 @@ aside {
     border: none;
     padding: 6px 12px;
 }
-
 
 .post-title {
     position: absolute;
@@ -461,4 +462,70 @@ aside {
     width: 3px;
     height: 200px;
     bottom: 300px;
+}
+
+/* Seção de Resumo */
+
+#post-resume {
+    position: absolute;
+    right: 120px;
+    left: 0px;
+    bottom: 0px;
+    top: 630px;
+}
+
+#textResume {
+    display: none;
+}
+
+.title-resume {
+    position: absolute;
+    width: 1058px;
+    height: 45px;
+    left: 250px;
+    top: 0px;
+    background: #FDF1EB;
+    border: 1px solid #ECECEC;
+    border-radius: 3px 3px 0px 0px;
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 125%;
+    display: flex;
+    align-items: center;
+    color: #4E4E4E;
+    padding-left: 15px;
+}
+
+#resumeContent {
+    position: absolute;
+    width: 1058px;
+    height: 144px;
+    left: 250px;
+    top: 43px;
+    border: 1px solid #ECECEC;
+    border-radius: 3px;
+    text-align: justify;
+}
+
+#resumeContent p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    color: #5C5C5C;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    padding: 15px;
+}
+
+#showContent {
+    color: #ED7839;
+    font-weight: 700;
 }

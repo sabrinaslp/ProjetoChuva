@@ -17,9 +17,6 @@
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.css">
 
-<!-- To Do 12/05/2022
-- Colocar os botões de interação-->
-
 </head>
 
 <body>
@@ -85,33 +82,37 @@
 
         <!-- Título da postagem -->
         <div class="post-header">
-            
-            <h2 class="post-title">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h2>
-            
+
+            <h2 class="post-title">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e
+                15 anos, do município de Campinas/SP</h2>
+
             <div class="post-options">
-                <button id="download-button"><i class="fas fa-download" style="color:white; font-size: 16px; line-height: 22px; letter-spacing: 0.01em; text-transform: uppercase; padding-right: 5px;"></i>Download</button>
-                <button id="favorite-button" style="height: 34px; width: 43px;"><i class="fas fa-star" style="color:white; font-size: 16px; line-height: 22px; letter-spacing: 0.01em; text-transform: uppercase;"></i></button>
+                <button id="download-button"><i class="fas fa-download"
+                        style="color:white; font-size: 16px; line-height: 22px; letter-spacing: 0.01em; text-transform: uppercase; padding-right: 5px;"></i>Download</button>
+                <button id="favorite-button" style="height: 34px; width: 43px;"><i class="fas fa-star"
+                        style="color:white; font-size: 16px; line-height: 22px; letter-spacing: 0.01em; text-transform: uppercase;"></i></button>
                 <button id="doi-button" style="height: 34px;"><img src="imgs/doi.svg" alt="Botão DOI"></button>
             </div>
-            
+
             <span>COMO CITAR ESSE TRABALHO?</span>
         </div>
 
         <!-- Vídeo -->
         <div id="video-content">
-           
+
             <div class="container-video">
                 <img src="imgs/vídeo overlay.svg" class="img-fluid" alt="Filtro de vídeo">
-                <h3>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP</h3>
-                <div class="master-round"><img src="./imgs/master.svg" style ="border-radius: 100%; padding: 3px;"></div>
+                <h3>Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do
+                    município de Campinas/SP</h3>
+                <div class="master-round"><img src="./imgs/master.svg" style="border-radius: 100%; padding: 3px;"></div>
                 <p class="autor">Beatriz Christiane Melo</p>
                 <p class="autor-local">FCA / Universidade Estadual de Campinas</p>
             </div>
-            
+
             <div class="video-details">
                 <div class="details-title">
                     <p class="p-details">Detalhes</p>
-                </div>   
+                </div>
                 <div class="details-content">
                     <p>Tipo de Apresentação: <b>Pôster</b></br>
                         Eixo Temático: <b>Alimentação e saúde (AS)</b><br>
@@ -133,28 +134,57 @@
                         &sup2Universidade de São Paulo <br>
                         &sup3Instituto Nacional de Pesquisas Espaciais <br>
                         &#8308Universidade Federal do Rio de Janeiro <br>
-                    </p>  
+                    </p>
                     <div class="scroll">
                         <div class="details-up-scroll"></div>
-                        <div class="details-down-scroll"></div> 
+                        <div class="details-down-scroll"></div>
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
         <!-- Resumo da postagem -->
-        <div class="post-resume">
+        <div id="post-resume">
             <div class="container">
+                <div class="title-resume">Resumo</div>
+                <div id="resumeContent" onclick="showHiddenText()">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident inventore optio ipsum quo sed
+                        illo ut assumenda, repellendus enim minus consequuntur dignissimos alias dolores error debitis
+                        rerum sequi voluptate quidem?
+                        Beatae reprehenderit dicta voluptates hic officiis dolores voluptatem quibusdam ipsam deleniti,
+                        expedita accusamus, corrupti praesentium a repudiandae molestias voluptate facilis vero sed
+                        repellat ab velit ipsa enim saepe tempora. Atque?
+                        Sed odit amet aut magni odio consequuntur autem dolor laborum ipsa quos eius, impedit
+                        consectetur hic quo unde praesentium, soluta quidem. Accusamus, similique ratione ullam debitis
+                        est illum cum! Quod.
+                        Reiciendis ullam numquam facilis laborum esse... <span id="showContent">ver mais</span>
+                    </p>
+                    <p id="textResume">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt consequatur quis qui quidem
+                        cum, accusamus iure commodi eaque nesciunt enim! Odio, sequi. Dicta, optio officiis esse ratione
+                        fugit temporibus suscipit.
+                        Sapiente, sunt ratione, deserunt voluptates repudiandae vel dolores, dolore sequi animi error
+                        nostrum veritatis officiis. Iure ea dolores maxime quaerat tempore, qui obcaecati aliquid, magni
+                        nesciunt voluptatibus incidunt, doloribus debitis!
+                        Optio voluptatem officiis, cumque excepturi totam corporis rerum recusandae nesciunt autem
+                        deleniti eius molestiae eveniet quibusdam iusto in ipsam sunt! Quod ab temporibus modi inventore
+                        provident impedit error? Ea, quis. </br>
+                        </br>
+                        Voluptatem ut fugiat nostrum veritatis quisquam earum quibusdam, optio in ab minus, aliquam
+                        saepe, fugit nihil beatae reprehenderit. Earum commodi vitae odit ratione veniam dolor!
+                        Obcaecati labore aut qui saepe.
+                        Iusto, ea odio? Aliquam temporibus sint quisquam veniam voluptate fuga pariatur distinctio
+                        numquam quis eum sit ipsam cum perspiciatis illum enim, similique quod esse repellat tempore
+                        eligendi quia consequuntur. Architecto?
+                    </p>
+                </div>
 
-                </div>        
-            </div>
-        </div>
 
-        <!-- Tópico de discussões -->
-        <div class="post-discussion">
+                <!-- Tópico de discussões -->
+                <div class="post-discussion">
 
-        </div>
+                </div>
 
     </main>
 
@@ -162,6 +192,8 @@
     <footer>
         <!-- <img src="/imgs/imagem - footer.svg" alt="Galoá - anais e proceedings"> -->
     </footer>
+
+    <script src="/js/script.js"></script>
 
 </body>
 
