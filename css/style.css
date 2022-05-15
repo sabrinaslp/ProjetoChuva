@@ -581,8 +581,6 @@ aside {
     position: relative;
     top: 50px;
     height: 100%;
-    display: none;
-    /* remover depois */
 }
 
 .message-topic2 {
@@ -740,7 +738,6 @@ aside {
     border: 1px solid #E7E7E7;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    display: none;
 }
 
 .painel-topic,
@@ -764,10 +761,13 @@ aside {
     border: 1px solid #E7E7E7;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    display: none;
 }
 
 #createTopic {
+    display: none;
+}
+
+#sentTopic {
     display: none;
 }
 
@@ -973,6 +973,7 @@ aside {
     flex-direction: column;
     column-gap: 8px;
     align-items: center;
+    z-index: 5;
 }
 
 .wait-author {
@@ -994,13 +995,104 @@ aside {
     color: #ED7839;
 }
 
+#expandedTopic {
+    position: absolute;
+    top: 582px;
+    right: 0;
+    left: 0;
+    height: 760px;
+    width: 1028px;
+    background: #F8F8F8;
+}
+
+.topic-author {
+    position: absolute;
+    left: 15px;
+    right: 0px;
+    top: 0px;
+    height: 148px;
+    bottom: 0px;
+    background: #ffff;
+    border: 1px solid #E7E7E7;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.12);
+    width: 1024px;
+}
+
+.author-id, .coauthor-id {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 33.07px;
+    margin-right: 23.19px;
+    margin-top: 15px;
+}
+
+.author-id p, .coauthor-id p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ED7839;
+}
+
+.author-answer {
+    position: absolute;
+    top: 148px;
+    left: 15px;
+    right: 0px;
+    background: #F8F8F8;
+    border: 1px solid #E7E7E7;
+    border-radius: 0px;
+    height: 131px;
+    width: 1024px;
+}
+
+.question-author3 {
+    position: absolute;
+    left: 23.19px;
+    top: 18px;
+    padding-bottom: 18px;
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.coauthor-answer {
+    position: absolute;
+    top: 278px;
+    left: 15px;
+    right: 0px;
+    background: #F8F8F8;
+    border: 1px solid #E7E7E7;
+    border-radius: 0px;
+    height: 160px;
+    width: 1024px;
+}
+.coauthor-answer2 {
+    position: absolute;
+    top: 430px;
+    left: 15px;
+    right: 0px;
+    background: #F8F8F8;
+    border: 1px solid #E7E7E7;
+    border-radius: 0px;
+    height: 131px;
+    width: 1024px;
+}
+
 footer {
     position: absolute;
     left: 237px;
     right: 0%;
     top: 200%;
     bottom: 0%;
+    display: none;
 }
+
 
 /* Responsividade */
 

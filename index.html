@@ -219,7 +219,7 @@
                                 <p>1 resposta</p>
                             </div>
                         </div>
-                        <div id="collapsedTopic2">
+                        <div id="collapsedTopic2" onclick="expandTopic()">
                             <p class="subject-question2">Assunto da pergunta aparece aqui</p>
                             <p class="question-author2">Carlos Henrique Santos</p>
                             <p class="topic-content2">Comecinho da pergunta aparece aqui resente relato inscreve-se no
@@ -233,9 +233,61 @@
                                 <p>1 resposta</p>
                             </div>
                         </div>
-
-
                     </div>
+
+                    <!-- Tópico expandido -->
+                    <div id="expandedTopic">
+                        <div class="topic-author">
+                            <div class="author-id">
+                                <p class="aut-id">Autor</p>
+                                <i class="fa fa-check-double"
+                                    style=" font-weight: 900; font-size: 20px; line-height: 23px; color: #ED7839; margin-bottom: 15px;"></i>
+                            </div>
+                            <p class="question-author3">Adriano da Silva</p>
+                            <p class="topic-content">Resposta do autor é aqui. Relato inscreve-se no campo da análise da
+                                dimensão e impacto de processo formativo situado impacto de processo formativo processo
+                                resente relato inscreve-se no campo da análise da dimensão e impacto de processo
+                                formativo situado impacto de processo formativo processo.</p>
+                        </div>
+
+                        <div class="author-answer">
+                            <p class="question-author3">Carlos Henrique Santos</p>
+                            <p class="topic-content">Consegui entender melhor agora! Parece que a variação da análise da
+                                dimensão e impacto de processo formativo situado impacto de processo formativo.
+                                Obrigada pela resposta, muito interessante o seu trabalho! </p>
+                        </div>
+
+                        <div class="coauthor-answer">
+                            <div class="coauthor-id">
+                                <p class="co-id">Coautor</p>
+                                <i class="fa fa-check-double"
+                                style=" font-weight: 900; font-size: 20px; line-height: 23px; color: #ED7839; margin-bottom: 15px;"></i>
+                            </div>
+                            <p class="question-author3">Carmila Ferreira Andrade</p>
+                            <p class="topic-content">Também ínteressante lembrar que o relato inscreve-se no campo da
+                                análise da dimensão e impacto de processo formativo situado impacto de processo
+                                formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto
+                                de processo formativo situado impacto de processo formativo processo.
+
+                                Situado impacto de processo formativo processo resente relato inscreve-se no campo da
+                                análise da dimensão e impacto de processo formativo situado impacto de processo
+                                formativo processo.</p>
+                        </div>    
+                        <div class="coauthor-answer2">
+                            <div class="coauthor-id">
+                                <p>Coautor</p>
+                                <i class="fa fa-check-double"
+                                style=" font-weight: 900; font-size: 20px; line-height: 23px; color: #ED7839; margin-bottom: 15px;"></i>
+                            </div>
+                            <p class="question-author3">Ana Carolina</p>
+                            <p class="topic-content">Resposta do autor é aqui. Relato inscreve-se no campo da análise da
+                                dimensão e impacto de processo formativo situado impacto de processo formativo processo
+                                resente relato inscreve-se no campo da análise da dimensão e impacto de processo
+                                formativo situado impacto de processo formativo processo.</p>
+                        </div>
+                    </div>
+
+                   
 
                     <!-- Criar tópico novo  -->
                     <div id="createTopic" onclick="newTopic()">
@@ -272,9 +324,23 @@
                                 <p class="wait-author">Aguardando feedback dos autores</p>
                                 <p class="edit-topic">Editar tópico</p>
                             </div>
-                            <img src="./imgs/Rectangle 3.1.svg" style="position: absolute; opacity: 0.5; top: 262px; left: 15px; height: 148px; width: 1028px; z-index: -1;">
+                            <img src="./imgs/Rectangle 3.1.svg"
+                                style="position: absolute; opacity: 0.5; top: 262px; left: 15px; height: 148px; width: 1028px; z-index: 4;">
+                            <div id="collapsedTopic" style="z-index: 0;">
+                                <p class="subject-question">Assunto da pergunta aparece aqui</p>
+                                <p class="question-author">Carlos Henrique Santos</p>
+                                <p class="topic-content">Comecinho da pergunta aparece aqui resente relato inscreve-se
+                                    no
+                                    campo da análise da dimensão e impacto de processo formativo situado impacto de
+                                    processo
+                                    formativo processo...</p>
+                            </div>
                         </div>
                     </div>
+
+
+
+
                 </div>
             </div>
     </main>
