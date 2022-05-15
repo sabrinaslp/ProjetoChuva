@@ -16,7 +16,7 @@
 
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.css">
-    
+
 </head>
 
 <body>
@@ -64,8 +64,9 @@
             </div>
 
             <!-- Menu responsivo -->
-            <button id="responsiveMenu" onclick="showMenuResp()" onmouseout="hiddenMenu()"><i class="fa fa-bars"></i></button>
-           
+            <button id="responsiveMenu" onclick="showMenuResp()" onmouseout="hiddenMenu()"><i
+                    class="fa fa-bars"></i></button>
+
             <!-- Menu barra lateral -->
             <nav id="menuSide">
                 <ul>
@@ -187,57 +188,79 @@
                 <!-- Tópico de discussões -->
                 <div id="postDiscussion">
                     <h1 class="title-discussion">Discussões</h1>
-                        <div id="homeTopic">
-                            <p class="message-topic">Compartilhe suas ideias ou dúvidas com os autores!</p>
-                            <div class="home-icons">
-                                <img src="imgs/icone1.svg">
-                                <img src="imgs/icone2.svg">
-                                <img src="imgs/icone3.svg">
-                            </div>
-                            <div class="message-topic2">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</div>
-                            <div class="create-topic">
-                                <button class="create-topic-button"><img src="./imgs/icon - criar.svg"> criar tópico</button>
-                                <div class="div-button"></div>
+                    <div id="homeTopic">
+                        <p class="message-topic">Compartilhe suas ideias ou dúvidas com os autores!</p>
+                        <div class="home-icons">
+                            <img src="imgs/icone1.svg">
+                            <img src="imgs/icone2.svg">
+                            <img src="imgs/icone3.svg">
+                        </div>
+                        <div class="message-topic2">Sabia que o maior estímulo no desenvolvimento científico e cultural
+                            é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</div>
+                        <div class="create-topic">
+                            <button class="create-topic-button"><img src="./imgs/icon - criar.svg"> criar
+                                tópico</button>
+                            <div class="div-button"></div>
+                        </div>
+                    </div>
+
+                    <div id="topics">
+                        <div id="collapsedTopic">
+                            <p class="subject-question">Assunto da pergunta aparece aqui</p>
+                            <p class="question-author">Carlos Henrique Santos</p>
+                            <p class="topic-content">Comecinho da pergunta aparece aqui resente relato inscreve-se no
+                                campo da análise da dimensão e impacto de processo formativo situado impacto de processo
+                                formativo processo...</p>
+                            <div class="painel-topic">
+                                <img src="./imgs/mais informações.svg" alt="Mais informações">
+                                <button class="favorite-topic"><img src="./imgs/green apples 22.svg"
+                                        alt="Favoritar este tópico"></button>
+                                <p>1 like</p>
+                                <p>1 resposta</p>
                             </div>
                         </div>
-
-                        <div id="topics">
-                            <div id="collapsedTopic">
-                                    <p class="subject-question">Assunto da pergunta aparece aqui</p>
-                                    <p class="question-author">Carlos Henrique Santos</p>
-                                    <p class="topic-content">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
-                                <div class="painel-topic">
-                                    <img src="./imgs/mais informações.svg" alt="Mais informações">
-                                    <button class="favorite-topic"><img src="./imgs/green apples 22.svg" alt="Favoritar este tópico"></button>
-                                    <p>1 like</p> <p>1 resposta</p>
-                                </div>
-                            </div>
-                            <div id="collapsedTopic2">
-                                <p class="subject-question2">Assunto da pergunta aparece aqui</p>
-                                <p class="question-author2">Carlos Henrique Santos</p>
-                                <p class="topic-content2">Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                        <div id="collapsedTopic2">
+                            <p class="subject-question2">Assunto da pergunta aparece aqui</p>
+                            <p class="question-author2">Carlos Henrique Santos</p>
+                            <p class="topic-content2">Comecinho da pergunta aparece aqui resente relato inscreve-se no
+                                campo da análise da dimensão e impacto de processo formativo situado impacto de processo
+                                formativo processo...</p>
                             <div class="painel-topic2">
                                 <img src="./imgs/mais informações.svg" alt="Mais informações">
-                                <button class="favorite-topic2"><img src="./imgs/green apples 22.svg" alt="Favoritar este tópico"></button>
-                                <p>1 like</p> <p>1 resposta</p>
+                                <button class="favorite-topic2"><img src="./imgs/green apples 22.svg"
+                                        alt="Favoritar este tópico"></button>
+                                <p>1 like</p>
+                                <p>1 resposta</p>
                             </div>
                         </div>
-                            
 
+
+                    </div>
+
+                    <!-- Criar tópico novo  -->
+                    <div id="createTopic" onclick="newTopic()">
+                        <p class="message-new-topic">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os
+                            autores!</p>
+                        <p class="new-subject">Assunto</p>
+                        <input class="new-subject-box" type="text" id="topico" name="topico" placeholder="Defina um tópico sucinto para notificar os autores...">
+                        <p class="new-content">Conteúdo</p>
+                        <div class="new-content-box">
+                            <div class="content-box-options">
+                                <img src="./imgs/Shape-negrito.svg" alt="Deixar texto em negrito">
+                                <img src="./imgs/Shape-italico.svg" alt="Deixar texto em itálico">
+                                <button class="send-topic-button">Enviar</button>
+                            </div>
+                            <div class="div-button2"></div>
                         </div>
+                    </div>
 
-                        <!-- Criar tópico novo  -->
-                        <div id="createTopic">
+                    <!-- Enviar tópico -->
+                    <div id="sendTopic">
 
-                        </div>
-
-                        <!-- Enviar tópico -->
-                        <div class="sendTopic">
-
-                        </div>
+                    </div>
                 </div>
             </div>
-     </main>
+    </main>
 
     <!-- Rodapé -->
     <footer>

@@ -37,5 +37,13 @@ function hiddenMenu() {
   logoSide.style.display = "none";
 }
 
+// Enviar novo tópico
+
+// var createTopic = document.getElementById("createTopic");
+// var topics = document.getElementById("topics");
+
+// function newTopic() {
+  
+// }
 
   
