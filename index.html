@@ -242,7 +242,8 @@
                         <p class="message-new-topic">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os
                             autores!</p>
                         <p class="new-subject">Assunto</p>
-                        <input class="new-subject-box" type="text" id="topico" name="topico" placeholder="Defina um tópico sucinto para notificar os autores...">
+                        <input class="new-subject-box" type="text" id="topico" name="topico"
+                            placeholder="Defina um tópico sucinto para notificar os autores...">
                         <p class="new-content">Conteúdo</p>
                         <div class="new-content-box">
                             <div class="content-box-options">
@@ -255,8 +256,24 @@
                     </div>
 
                     <!-- Enviar tópico -->
-                    <div id="sendTopic">
+                    <div id="sentTopic" onlick="sendTopic()">
+                        <p class="success-message">Seu tópico foi enviado com sucesso! :D</p>
+                        <p class="thanks-message">Agradecemos por sua contribuição, uma notificação será enviada ao seu
+                            email assim que seu tópico for respondido!</p>
+                        <p class="more-works">Descubra outros trabalhos!</p>
 
+                        <button class="new-topic-button">criar novo tópico</button>
+                        <div class="div-button3"></div>
+
+                        <div class="submitted-topic">
+                            <div class="submitted-topic-comments">
+                                <i class="fa fa-check-double"
+                                    style=" font-weight: 900; font-size: 20px; line-height: 23px; color: #707070;border-radius: 4px; margin-bottom: 8px;"></i>
+                                <p class="wait-author">Aguardando feedback dos autores</p>
+                                <p class="edit-topic">Editar tópico</p>
+                            </div>
+                            <img src="./imgs/Rectangle 3.1.svg" style="position: absolute; opacity: 0.5; top: 262px; left: 15px; height: 148px; width: 1028px; z-index: -1;">
+                        </div>
                     </div>
                 </div>
             </div>
