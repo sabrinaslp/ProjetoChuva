@@ -16,7 +16,7 @@ function showHiddenText() {
     }
   }
 
-  // Menu responsivo
+// Menu responsivo
 
 var menuSide = document.getElementById("menuSide")
 var responsiveMenu = document.getElementById("responsiveMenu")
@@ -27,10 +27,14 @@ function showMenuResp() {
   menuSide.style.display ="block";
   menuSide.style.paddingTop = "70px";
   menuSide.style.background = "white";
+  logoSide.style.position = "absolute";
+  logoSide.style.display = "block";
+  logoSide.style.top = "320px";
 }
 
 function hiddenMenu() {
   menuSide.style.display ="none";
+  logoSide.style.display = "none";
 }
 
 
