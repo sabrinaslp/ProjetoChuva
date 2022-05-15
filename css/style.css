@@ -114,8 +114,8 @@ aside {
 .texto-inicial {
     flex-direction: row;
     justify-content: center;
-    padding-left: 57px;
-    padding-top: 5px;
+    padding-left: 0.4vw;
+    padding-top: 0.51vh;
     position: absolute;
     left: 25.16vh;
 }
@@ -166,7 +166,7 @@ aside {
     width: 72px;
     height: 18px;
     top: 17px;
-    right: 41.29vh;
+    right: 652.8px;
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 400;
@@ -199,8 +199,8 @@ aside {
 
 .login-img {
     position: absolute;
-    right: 36.77vh;
-    top: 2.58vh;
+    right: 610px;
+    top: 2vh;
     width: 30px;
     height: 30px;
 }
@@ -226,7 +226,7 @@ aside {
     position: absolute;
     width: 97px;
     height: 34px;
-    right: 65vh;
+    right: 43.4vw;
     top: 17px;
     border: 1px solid #CCCCCC;
     border-radius: 3px;
@@ -490,7 +490,7 @@ aside {
 
 .title-resume {
     position: absolute;
-    width: 66.1vw;
+    width: 1058px;
     height: 45px;
     left: 250px;
     top: 0px;
@@ -511,7 +511,7 @@ aside {
 
 #resumeContent {
     position: absolute;
-    width: 66.1vw;
+    width: 1058px;
     height: 18.54vh;
     left: 250px;
     top: 43px;
@@ -550,7 +550,7 @@ aside {
     top: 200px;
     margin-top: 30px;
     padding: 5px;
-    width: 66.1vw;
+    width: 1058px;
     height: 621px;
     border: 1px solid #ECECEC;
     border-radius: 3px;
@@ -558,7 +558,7 @@ aside {
 
 .title-discussion {
     position: absolute;
-    width: 66.1vw;
+    width: 1058px;
     height: 45px;
     right: 0px;
     left: 0px;
@@ -643,7 +643,7 @@ aside {
 
 .div-button {
     position: absolute;
-    width: 136vh;
+    width: 1019px;
     left: 15px;
     top: 186px;
     display: flex;
@@ -1007,6 +1007,7 @@ aside {
     height: 760px;
     width: 1028px;
     background: #F8F8F8;
+    display: none;
 }
 
 .topic-author {
