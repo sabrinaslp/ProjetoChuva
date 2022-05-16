@@ -1024,7 +1024,8 @@ aside {
     width: 1024px;
 }
 
-.author-id, .coauthor-id {
+.author-id,
+.coauthor-id {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1034,7 +1035,8 @@ aside {
     margin-top: 15px;
 }
 
-.author-id p, .coauthor-id p {
+.author-id p,
+.coauthor-id p {
     font-family: 'Quicksand';
     font-style: normal;
     font-weight: 700;
@@ -1093,6 +1095,7 @@ aside {
     height: 160px;
     width: 1024px;
 }
+
 .coauthor-answer2 {
     position: absolute;
     top: 430px;
@@ -1153,7 +1156,9 @@ aside {
         bottom: 0px;
     }
 
-    .login, .login-img, .dados-login {
+    .login,
+    .login-img,
+    .dados-login {
         left: 3px;
         bottom: 4px;
         top: 10px;
@@ -1165,7 +1170,7 @@ aside {
         left: 30px;
         margin-top: 10px;
     }
-    
+
     .email {
         font-size: 7px;
     }
@@ -1196,7 +1201,8 @@ aside {
         display: none;
     }
 
-    #sidebar, aside {
+    #sidebar,
+    aside {
         background: transparent;
         box-shadow: none;
         border: none;
