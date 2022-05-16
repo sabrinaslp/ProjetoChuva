@@ -21,10 +21,10 @@ function showHiddenText() {
 
 // Menu responsivo
 
-var menuSide = document.getElementById("menuSide")
-var responsiveMenu = document.getElementById("responsiveMenu")
-var logoSide = document.getElementById("logoSide")
-var aside = document.getElementsByTagName("aside")
+var menuSide = document.getElementById("menuSide");
+var responsiveMenu = document.getElementById("responsiveMenu");
+var logoSide = document.getElementById("logoSide");
+var aside = document.getElementsByTagName("aside");
 
 function showMenuResp() {
   menuSide.style.display ="block";

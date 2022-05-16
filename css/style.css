@@ -31,7 +31,7 @@ aside {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
-.sidebar {
+#sidebar {
     background-color: #ffff;
     height: 2508px;
     width: 220px;
@@ -491,7 +491,7 @@ aside {
 
 .title-resume {
     position: absolute;
-    width: 1058px;
+    width: 66.125vw;
     height: 45px;
     left: 250px;
     top: 0px;
@@ -512,7 +512,7 @@ aside {
 
 #resumeContent {
     position: absolute;
-    width: 1058px;
+    width: 66.125vw;
     height: 18.54vh;
     left: 250px;
     top: 43px;
@@ -551,7 +551,7 @@ aside {
     top: 200px;
     margin-top: 30px;
     padding: 5px;
-    width: 1058px;
+    width: 66.125vw;
     height: 600px;
     border: 1px solid #ECECEC;
     border-radius: 3px;
@@ -559,7 +559,7 @@ aside {
 
 .title-discussion {
     position: absolute;
-    width: 1058px;
+    width: 66.125vw;
     height: 45px;
     right: 0px;
     left: 0px;
@@ -582,6 +582,7 @@ aside {
     position: relative;
     top: 50px;
     height: 100%;
+    width: 66.125vw;
 }
 
 .message-topic2 {
@@ -594,7 +595,7 @@ aside {
     position: relative;
     top: 118px;
     left: 230px;
-    width: 626px;
+    width: 39.125vw;
     text-align: center;
 }
 
@@ -644,7 +645,7 @@ aside {
 
 .div-button {
     position: absolute;
-    width: 1019px;
+    width: 63.68vw;
     left: 15px;
     top: 186px;
     display: flex;
@@ -885,7 +886,7 @@ aside {
 
 .div-button2 {
     position: absolute;
-    width: 136vh;
+    width: 63.68vw;
     left: 10px;
     top: 130px;
     border: 1px solid #E7E7E7;
@@ -956,7 +957,7 @@ aside {
 .div-button3 {
     position: absolute;
     top: 234px;
-    width: 136vh;
+    width: 63.68vw;
     left: 15px;
     top: 232px;
     display: flex;
@@ -1110,9 +1111,6 @@ aside {
     top: 200%;
 }
 
-
-/* Responsividade */
-
 #responsiveMenu {
     background-color: transparent;
     border: none;
@@ -1138,10 +1136,59 @@ aside {
     }
 
     .titulo-side {
-        width: 100%;
+        width: 700px;
         align-items: center;
         justify-content: space-around;
         position: fixed;
+    }
+
+    header {
+        margin-top: 65px;
+        height: 90px;
+    }
+
+    .botao-seletor {
+        left: 3px;
+        top: 50px;
+        bottom: 0px;
+    }
+
+    .login, .login-img, .dados-login {
+        left: 3px;
+        bottom: 4px;
+        top: 10px;
+    }
+
+    .dados-login {
+        font-size: 12px;
+        text-align: left;
+        left: 30px;
+        margin-top: 10px;
+    }
+    
+    .email {
+        font-size: 7px;
+    }
+
+    .post-header {
+        margin-top: 80px;
+        margin-left: -230px;
+    }
+
+    #video-content {
+        margin-top: 80px;
+        margin-left: -230px;
+        width: 300px;
+    }
+
+    #post-resume {
+        margin-top: 80px;
+        margin-left: -230px;
+    }
+
+    footer {
+        margin-left: -230px;
+        width: 700px;
     }
 
     #menuSide,
@@ -1149,8 +1196,10 @@ aside {
         display: none;
     }
 
-    aside {
+    #sidebar, aside {
         background: transparent;
+        box-shadow: none;
+        border: none;
     }
 }
 
