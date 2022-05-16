@@ -183,7 +183,7 @@
                         eligendi quia consequuntur. Architecto?
                     </p>
                 </div>
-
+        
                 <!-- Tópico de discussões -->
                 <div id="postDiscussion">
                     <h1 class="title-discussion">Discussões</h1>
@@ -197,7 +197,7 @@
                         <div class="message-topic2">Sabia que o maior estímulo no desenvolvimento científico e cultural
                             é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</div>
                         <div class="create-topic">
-                            <button class="create-topic-button"><img src="./imgs/icon - criar.svg"> criar
+                            <button id="createTopicButton" onclick="newTopic()"><img src="./imgs/icon - criar.svg"> criar
                                 tópico</button>
                             <div class="div-button"></div>
                         </div>
@@ -218,7 +218,7 @@
                                 <p>1 resposta</p>
                             </div>
                         </div>
-                        <div id="collapsedTopic2" onclick="expandTopic()">
+                        <div id="collapsedTopics" onclick="expandTopic()">
                             <p class="subject-question2">Assunto da pergunta aparece aqui</p>
                             <p class="question-author2">Carlos Henrique Santos</p>
                             <p class="topic-content2">Comecinho da pergunta aparece aqui resente relato inscreve-se no
@@ -287,7 +287,7 @@
                     </div>
 
                     <!-- Criar tópico novo  -->
-                    <div id="createTopic" onclick="newTopic()">
+                    <div id="createTopic">
                         <p class="message-new-topic">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os
                             autores!</p>
                         <p class="new-subject">Assunto</p>
@@ -298,23 +298,23 @@
                             <div class="content-box-options">
                                 <img src="./imgs/Shape-negrito.svg" alt="Deixar texto em negrito">
                                 <img src="./imgs/Shape-italico.svg" alt="Deixar texto em itálico">
-                                <button class="send-topic-button">Enviar</button>
+                                <button id="sendTopicButton" onclick="sendTopic()">Enviar</button>
                             </div>
                             <div class="div-button2"></div>
                         </div>
                     </div>
 
                     <!-- Enviar tópico -->
-                    <div id="sentTopic" onlick="sendTopic()">
+                    <div id="sentTopic">
                         <p class="success-message">Seu tópico foi enviado com sucesso! :D</p>
                         <p class="thanks-message">Agradecemos por sua contribuição, uma notificação será enviada ao seu
                             email assim que seu tópico for respondido!</p>
                         <p class="more-works">Descubra outros trabalhos!</p>
 
-                        <button class="new-topic-button">criar novo tópico</button>
+                        <button class="new-topic-button" onclick="newTopic()">criar novo tópico</button>
                         <div class="div-button3"></div>
 
-                        <div class="submitted-topic">
+                        <div id="submittedTopic">
                             <div class="submitted-topic-comments">
                                 <i class="fa fa-check-double"
                                     style=" font-weight: 900; font-size: 20px; line-height: 23px; color: #707070;border-radius: 4px; margin-bottom: 8px;"></i>
@@ -322,8 +322,8 @@
                                 <p class="edit-topic">Editar tópico</p>
                             </div>
                             <img src="./imgs/Rectangle 3.1.svg"
-                                style="position: absolute; opacity: 0.5; top: 262px; left: 15px; height: 148px; width: 1028px; z-index: 4;">
-                            <div id="collapsedTopic" style="z-index: 0;">
+                                style="position: absolute; opacity: 0.1; filter: blur(4px); top: 262px; left: 15px; height: 148px; width: 1028px; z-index: 4;">
+                            <div id="collapsedTopic" style="z-index: 0; opacity: 0.2;">
                                 <p class="subject-question">Assunto da pergunta aparece aqui</p>
                                 <p class="question-author">Carlos Henrique Santos</p>
                                 <p class="topic-content">Comecinho da pergunta aparece aqui resente relato inscreve-se
@@ -336,13 +336,13 @@
                     </div>
 
                 </div>
-            <!-- </div> -->
+            
 
         </div> <!-- fim do container main -->
     </main>
 
     <!-- Rodapé -->
-    <footer>
+    <footer id="footerPage">
         <img src="/imgs/imagem - footer.svg" alt="Galoá - anais e proceedings">
     </footer>
 
